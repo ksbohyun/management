@@ -8,7 +8,11 @@ export default class Customer extends React.Component {
       <TableRow>
         <TableCell>{this.props.id}</TableCell>
         <TableCell>
-          <img src={this.props.image} alt="profile" />
+          <img
+            src={this.props.image}
+            alt="profile"
+            style={{ width: "64px", height: "64px" }}
+          />
         </TableCell>
         <TableCell>{this.props.name}</TableCell>
         <TableCell>{this.props.birthday}</TableCell>
